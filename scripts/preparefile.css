@@ -1,0 +1,93 @@
+h1 {
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+}
+
+#divsubmitbtn{
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+#all_files{
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.col-sm-1{
+  text-align: center;
+}
+
+.pagecontent{
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#wrapper{
+    overflow: hidden;
+}
+
+#issuemessage{
+  color: red;
+  text-align: center;
+}
+
+#locationmessage{
+  color: green;
+  text-align: center;
+}
+
+#first {
+   margin-left: 0;
+   margin-right: 20%;
+   float: left  /* add this */
+}
+
+#sec {
+
+   #margin-right: 5%; /* if you don't want #second to wrap below #first */
+}
+
+h2 {
+    border-top: 5px solid #d3d3d3;
+    padding-top: 10px;
+}
+
+h4 {
+    border-top: 5px solid #d3d3d3;
+    padding-top: 10px;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+#ulheading{
+  margin-top:30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.text-box {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.merge_checkbox {
+  text-align: center;
+}
