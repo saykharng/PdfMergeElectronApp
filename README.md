@@ -10,7 +10,9 @@ Install Nodejs if dont have it already.
 
 Clone and build application:
 
->>> git clone git@github.com:saykharng/PdfMergeElectronApp.git
->>> npm install electron --save-dev
->>> npm run package-win
->>> npm run create-installer-win
+```bash
+git clone git@github.com:saykharng/PdfMergeElectronApp.git
+npm install electron --save-dev
+npm run package-win
+npm run create-installer-win
+'''
