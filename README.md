@@ -15,4 +15,3 @@ git clone git@github.com:saykharng/PdfMergeElectronApp.git
 npm install electron --save-dev
 npm run package-win
 npm run create-installer-win
-'''
