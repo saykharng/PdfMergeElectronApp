@@ -1,6 +1,6 @@
-#Pdf Merge App for Windows
+# Pdf Merge App for Windows
 
-##Application helps you to merge multiple pdf files into one.
+## Application helps you to merge multiple pdf files into one.
 
 The application uses Electron to provide a user interface. Electron then sends the commandline information to executable created using python to  merge the pdf file.
 
