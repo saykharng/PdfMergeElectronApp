@@ -6,7 +6,7 @@ The application uses Electron to provide a user interface. Electron then sends t
 
 ## Installation
 
-Install Nodejs if dont have it already.
+Install Nodejs if you dont have it already.
 
 Clone and build application:
 
