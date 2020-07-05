@@ -21,6 +21,7 @@
   "author": "shekhar",
   "license": "CC0-1.0",
   "devDependencies": {
+<<<<<<< HEAD
     "electron": "^8.2.0",
     "electron-packager": "^14.2.1",
     "electron-winstaller": "^4.0.0"
@@ -31,5 +32,8 @@
     "mac": {
       "category": "mergepdf.app.utility.pdf"
     }
+=======
+    "electron": "^9.0.5"
+>>>>>>> 7600055f81c18adffc4c2227c3fd1ec1d867585e
   }
 }
