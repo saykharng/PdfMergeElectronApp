@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="./scripts/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./scripts/preparefile.css">    
+    <title >Merge Pdfs</title>
+  </head>
+  <body>
+    <h1>Merge Pdf files</h1>
+    <br>    
+    <form method="post" enctype="multipart/form-data">
+      <div class="form-group" id="all_files">
+        <div class="form-group row">
+              <label class="col-sm-1 col-form-label"></label>
+              <label class="col-md col-form-label">Files</label>
+              <label class="col-sm-1 col-form-label">Order of Merge</label>
+              <label class="col-sm-1 col-form-label">Remove File</label>
+          </div>
+
+        <div class="form-group row" id="File1_Details" >
+            <div class="col-sm-1">
+              <label for="File1" class="col-sm-1 col-form-label">File1</label>
+            </div>
+            <div class="col-md">
+              <input type="file" class="form-control-file form-control-sm" id="File1" name="File1">
+            </div>
+            <div class="col-sm-1" >
+              <input class="merge_order_field" id="File1_merge_order" name="File1_merge_order" type="number" min="1" max="30" value="1" step="1">
+            </div>        
+            <div class="col-sm-1">
+              <button class="removeline btn btn-link" id="File1_remove">X</button>
+            </div>
+        </div>
+
+        <div class="form-group row" id="File2_Details" >
+            <div class="col-sm-1">
+              <label for="File2" class="col-sm-1 col-form-label">File2</label>
+            </div>
+            <div class="col-md">
+              <input type="file" class="form-control-file form-control-sm" id="File2" name="File2">
+            </div>
+            <div class="col-sm-1" >
+              <input class="merge_order_field" id="File2_merge_order" name="File2_merge_order" type="number" min="1" max="30" value="2" step="1">
+            </div>        
+            <div class="col-sm-1">
+              <button class="removeline btn btn-link" id="File2_remove">X</button>
+            </div>
+        </div>
+
+        <br id="beforeme"/>
+        <br/>
+        <button type="button" id='add_another_file' class="btn btn-outline-primary btn-sm">Add more file to merge</button>
+        <br/>
+        <br/>
+        <div id="divsubmitbtn">
+          <button id="mergebtn" class="btn btn-success" type="button">Merge</button>
+        </div>
+      </div>
+    </form>
+    <div>
+      <p id="locationmessage"></p>
+      <p id="issuemessage"></p>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script type="text/javascript" src="./renderer.js"></script>
+    <script type="text/javascript" src="./scripts/preparefiles.js"></script>
+  </body>
+</html>

@@ -50,7 +50,7 @@ function merge_files() {
     let spawn = require("child_process");
     let path = require('electron').remote.app.getAppPath()
 	
-	const child = spawn.execFile(path+"./mergepdf.exe", [ordered_lfm, filepath], (error, out, err)=>{
+	const child = spawn.execFile(path+"./scripts/mergepdf.exe", [ordered_lfm, filepath], (error, out, err)=>{
 		if (error) {
 			throw error
 		}
